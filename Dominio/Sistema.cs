@@ -41,9 +41,9 @@
                 this.Personas.Add(persona);
             }
             catch
-{
-    throw;
-}
+            {
+                throw;
+            }
         }
         public void AgregarCuenta(Cuenta cuenta)
         {
@@ -56,9 +56,9 @@
                 this.Cuentas.Add(cuenta);
             }
             catch
-{
-    throw;
-}
+            {
+                throw;
+            }
         }
 
         public void AgregarActivo(Activo activo)
@@ -72,9 +72,9 @@
                 this.Activos.Add(activo);
             }
             catch
-{
-    throw;
-}
+            {
+                throw;
+            }
         }
 
 
@@ -89,9 +89,9 @@
                 this.Incidentes.Add(incidente);
             }
             catch
-{
-    throw;
-}
+            {
+                throw;
+            }
         }
         public void PrecargarDatos()
         {
@@ -104,9 +104,9 @@
         {
             List<Persona> personas = new List<Persona>
 {
-                new Persona("12345678", "Ana García", "ana.garcia@email.com", "099123456", "admin123", Rol.ADMIN),
+                new Persona("12345678", "Ana García", "admin@demo.com", "099123456", "admin123", Rol.ADMIN),
 
-                new Persona("23456789", "Carlos López", "carlos.lopez@email.com", "098234567", "1234", Rol.OPERADOR),
+                new Persona("23456789", "Carlos López", "operador@demo.com", "098234567", "operador123", Rol.OPERADOR),
                 new Persona("34567890", "María Martínez", "maria.martinez@email.com", "097345678", "1234", Rol.OPERADOR),
                 new Persona("45678901", "Juan Rodríguez", "juan.rodriguez@email.com", "096456789", "1234", Rol.OPERADOR),
                 new Persona("56789012", "Laura Sánchez", "laura.sanchez@email.com", "095567890", "1234", Rol.OPERADOR),
