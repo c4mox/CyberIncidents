@@ -5,6 +5,10 @@ Aplicación web desarrollada con C# y ASP.NET Core MVC como proyecto académico 
 ## Descripción
 Sistema para gestionar personas, cuentas, activos e incidentes de ciberseguridad mediante una aplicación web con autenticación y autorización basada en roles.
 
+## Live Demo
+
+[Open CyberIncidents](cyberincidents-camiloartola-gaa9atb4bng3cvbn.brazilsouth-01.azurewebsites.net)
+
 ## Tecnologías
 - C#
 - .NET 10
