@@ -1,11 +1,35 @@
-# Sistema de Gestión de Incidentes de Ciberseguridad
+# CyberIncidents
 
-Aplicación web desarrollada con C# y ASP.NET Core MVC como proyecto académico de Programación 2.
+Web application developed with C# and ASP.NET Core MVC for managing cybersecurity incidents, users, accounts, and assets.
 
-## Descripción
-Sistema para gestionar personas, cuentas, activos e incidentes de ciberseguridad mediante una aplicación web con autenticación y autorización basada en roles.
+## Live Demo
 
-## Tecnologías
+[Open CyberIncidents](https://cyberincidents-camiloartola-gaa9atb4bng3cvbn.brazilsouth-01.azurewebsites.net/)
+
+## Demo Credentials
+
+You can use the following test accounts to explore the application:
+
+### Administrator
+
+- **Email:** `admin@demo.com`
+- **Password:** `admin123`
+- **Role:** Administrator
+
+### Operator
+
+- **Email:** `operador@demo.com`
+- **Password:** `operador123`
+- **Role:** Operator
+
+> These credentials are provided exclusively for demonstration purposes.
+
+## Academic Project
+
+This project was developed as part of a university course focused on object-oriented programming and web application development. It was created as an academic assignment to apply concepts related to software architecture, ASP.NET Core MVC, authentication, authorization, and object-oriented programming.
+
+## Technologies
+
 - C#
 - .NET 10
 - ASP.NET Core MVC
@@ -14,17 +38,49 @@ Sistema para gestionar personas, cuentas, activos e incidentes de ciberseguridad
 - CSS
 - Bootstrap
 
-## Funcionalidades
-- Registro e inicio de sesión
-- Autenticación y cierre de sesión
-- Roles de usuario
-- Gestión de personas, cuentas y activos
-- Gestión de incidentes
-- Validaciones
-- Arquitectura MVC
+## Features
 
-## Estructura
-El proyecto separa el dominio de la aplicación web mediante proyectos y componentes propios de ASP.NET Core MVC.
+- User registration and login
+- Authentication and authorization
+- Role-based access control
+- User and account management
+- Asset management
+- Cybersecurity incident management
+- Incident tracking and validation
+- Form validation
+- MVC architecture
 
-## Ejecución
-Abrir la solución en Visual Studio y ejecutar el proyecto web `AplicacionWeb`.
+## Project Structure
+
+The solution is divided into separate projects:
+
+- **AplicacionWeb** — ASP.NET Core MVC web application, controllers, views, filters, and presentation logic.
+- **Dominio** — Domain classes and business logic.
+- **Consola** — Console application for interacting with the domain layer.
+
+## Documentation
+
+The repository includes UML diagrams and project documentation related to the system design and requirements.
+
+## Running Locally
+
+### Requirements
+
+- Visual Studio 2022 or later
+- .NET 10 SDK
+
+### Setup
+
+1. Clone the repository.
+2. Open `ObligatorioP2_26.slnx` in Visual Studio.
+3. Set `AplicacionWeb` as the startup project.
+4. Build the solution.
+5. Run the application.
+
+## Deployment
+
+The application is deployed on Microsoft Azure using Azure App Service, with continuous deployment through GitHub Actions and HTTPS enabled.
+
+## Author
+
+Camilo Artola
