@@ -4,7 +4,7 @@ Web application developed with C# and ASP.NET Core MVC for managing cybersecurit
 
 ## Live Demo
 
-[Open CyberIncidents](cyberincidents-camiloartola-gaa9atb4bng3cvbn.brazilsouth-01.azurewebsites.net)
+[Open CyberIncidents](https://cyberincidents-camiloartola-gaa9atb4bng3cvbn.brazilsouth-01.azurewebsites.net/)
 
 ## Academic Project
 
