@@ -1,0 +1,36 @@
+﻿<h2>Nueva Cuenta</h2>
+
+<form method="post">
+
+    <input type="hidden" name="cedula" value="@ViewBag.Cedula" />
+
+    <div class="form-check mb-3">
+        <input type="checkbox" name="mfaHabilitado" value="true" class="form-check-input" />
+        <label class="form-check-label">MFA habilitado</label>
+    </div>
+
+    <div class="mb-3">
+        <label>Fecha último cambio de contraseña</label>
+        <input type="date" name="fechaUltCambioPass" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Crear Cuenta
+    </button>
+
+    <a asp-action="Index"
+           asp-route-cedula="@ViewBag.Cedula"
+           class="btn btn-secondary">
+        Volver
+    </a>
+
+</form>
+
+<br />
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}

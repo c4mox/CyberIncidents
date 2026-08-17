@@ -1,0 +1,24 @@
+﻿@model List<Dominio.Incidente>
+
+<h2>Incidentes</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+        <th>Activo</th>
+        <th>Severidad</th>
+    </tr>
+
+    @foreach (var i in Model)
+    {
+        <tr>
+            <td>@i.Id</td>
+            <td>@i.FechaReportado.ToShortDateString()</td>
+            <td>@i.Estado</td>
+            <td>@i.ActivoAfectado.Codigo</td>
+            <td>@i.CalcularSeveridad()</td>
+        </tr>
+    }
+</table>

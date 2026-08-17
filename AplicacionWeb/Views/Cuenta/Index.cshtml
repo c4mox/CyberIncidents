@@ -1,0 +1,40 @@
+﻿@model List<Dominio.Cuenta>
+
+<h2>Cuentas</h2>
+
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>MFA habilitado</th>
+        <th>Ultimo cambio de contraseña</th>
+        <th>Activos</th>
+    </tr>
+
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Codigo</td>
+            @if (c.MfaHabilitado)
+            {
+                <td>Sí</td>
+            }
+            else
+            {
+                <td>No</td>
+            }
+            <td>@c.FechaUltCambioPass.ToShortDateString()</td>
+            <td>
+                <a asp-controller="Activo" asp-action="Index" asp-route-codigoCuenta="@c.Codigo"> Ver Activos</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<div class="mt-3">
+    <a class="btn btn-primary"
+           asp-controller="Cuenta"
+           asp-action="Crear"
+           asp-route-cedula="@ViewBag.Cedula">
+        Crear nueva Cuenta
+    </a>
+</div>

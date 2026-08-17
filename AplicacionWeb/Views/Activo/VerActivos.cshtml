@@ -1,0 +1,31 @@
+﻿@model List<Dominio.Activo>
+
+<h2>Mis Activos</h2>
+
+<table class="table">
+    <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Criticidad</th>
+        <th>Tiene Backup</th>
+    </tr>
+
+    @foreach (var a in Model)
+    {
+        <tr>
+            <td>@a.Codigo</td>
+            <td>@a.Nombre</td>
+            <td>@a.TipoActivo</td>
+            <td>@a.Criticidad</td>
+            @if (@a.TieneBackup)
+            {
+                <td>Sí</td>
+            }
+            else
+            {
+                <td>No</td>
+            }
+        </tr>
+    }
+</table>

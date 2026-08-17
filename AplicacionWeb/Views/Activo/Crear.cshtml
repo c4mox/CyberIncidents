@@ -1,0 +1,50 @@
+﻿<h2>Crear Activo</h2>
+
+<form method="post">
+
+    <input type="hidden" name="codigoCuenta" value="@ViewBag.CodigoCuenta" />
+
+    <div class="mb-3">
+        <label>Nombre</label>
+        <input type="text" name="nombre" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Tipo</label>
+        <select name="tipoActivo" class="form-select">
+            <option value="PC">PC</option>
+            <option value="SERVER">SERVER</option>
+            <option value="MOVIL">MOVIL</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Criticidad</label>
+        <input type="number" name="criticidad" min="1" max="5" class="form-control" />
+    </div>
+
+    <div class="form-check mb-3">
+        <input type="checkbox" name="tieneBackup" value="true" class="form-check-input" />
+        <label class="form-check-label">Tiene Backup</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Crear Activo
+    </button>
+
+    <a asp-action="Index"
+           asp-route-codigoCuenta="@ViewBag.CodigoCuenta"
+           class="btn btn-secondary">
+        Volver
+    </a>
+
+</form>
+
+<br />  
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}

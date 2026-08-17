@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="AplicacionWeb/AplicacionWeb.csproj" Id="7177fdc9-a5af-4fb6-9e68-5f7ff411c1c0" />
+  <Project Path="Consola/Consola.csproj" />
+  <Project Path="Dominio/Dominio.csproj" />
+</Solution>

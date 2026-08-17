@@ -1,0 +1,28 @@
+﻿@model List<Dominio.Persona>
+
+<h2>Personas</h2>
+
+<table class="table">
+    <tr>
+        <th>Cédula</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Teléfono</th>
+        <th>Rol</th>
+        <th>Ver Cuentas</th>
+    </tr>
+
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Cedula</td>
+            <td>@p.Nombre</td>
+            <td>@p.Email</td>
+            <td>@p.Telefono</td>
+            <td>@p.Rol</td>
+            <td>
+                <a asp-controller="Cuenta" asp-action="Index" asp-route-cedula="@p.Cedula">Ver Cuentas</a>
+            </td>
+        </tr>
+    }
+</table>
