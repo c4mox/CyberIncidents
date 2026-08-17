@@ -6,6 +6,24 @@ Web application developed with C# and ASP.NET Core MVC for managing cybersecurit
 
 [Open CyberIncidents](https://cyberincidents-camiloartola-gaa9atb4bng3cvbn.brazilsouth-01.azurewebsites.net/)
 
+## Demo Credentials
+
+You can use the following test accounts to explore the application:
+
+### Administrator
+
+- **Email:** `admin@demo.com`
+- **Password:** `admin123`
+- **Role:** Administrator
+
+### Operator
+
+- **Email:** `operador@demo.com`
+- **Password:** `operador123`
+- **Role:** Operator
+
+> These credentials are provided exclusively for demonstration purposes.
+
 ## Academic Project
 
 This project was developed as part of a university course focused on object-oriented programming and web application development. It was created as an academic assignment to apply concepts related to software architecture, ASP.NET Core MVC, authentication, authorization, and object-oriented programming.
